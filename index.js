@@ -34,9 +34,18 @@ home.addEventListener("click", function ()
 
 menuButton.addEventListener('click', function (params) {
     menu.className = 'show'
-    About.className = 'zoomOut'
-    Projects.className = 'zoomOut'
-    Contact.className = 'zoomOut'
+    if (About.className === 'show') {
+        About.className = 'zoomOut'
+    }
+    if (Projects.className === 'show') {
+        Projects.className = 'zoomOut'
+    }
+    if (Contact.className === 'show') {
+        Contact.className = 'zoomOut'
+    }
+    
+    
+    
     menuButton.className = 'zoomOut'
     
     
