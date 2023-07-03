@@ -36,7 +36,7 @@ body {
     height: 50px;
     background-color: white;
     text-align: center;
-    right: 5%;
+    left: 5%;
     top: 5%;
     border-radius: 20%;
     opacity: 0.7;
@@ -64,7 +64,7 @@ body {
     height: 50px;
     background-color: white;
     text-align: center;
-    right: 5%;
+    left: 5%;
     top: 5%;
     border-radius: 20%;
     opacity: 0.7;
@@ -246,7 +246,7 @@ a:hover {
 
 .zoomOut {
 
-    animation: zoomOut 1s forwards;
+    animation: zoomOut 0.5s forwards;
 
 
 }
@@ -283,7 +283,7 @@ a:hover {
 }
 
 .show {
-    animation: show 1s ease-out forwards;
+    animation: show 0.5s ease-out forwards;
 }
 
 @keyframes show {
