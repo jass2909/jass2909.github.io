@@ -1,4 +1,5 @@
 let heading = document.getElementById("heading")
+let heading1 = document.getElementById("heading1")
 let menu = document.getElementById("menu")
 let links = document.querySelectorAll(".link")
 let home = document.getElementById("navBack")
@@ -42,18 +43,28 @@ darkMode.addEventListener('click', function (params) {
 
 
 
-heading.addEventListener('click', function ()
+heading.addEventListener('click', function showMenu()
  {
     menu.className = 'show'
     
 })
+
+heading1.addEventListener('click', function showMenu(){
+
+    menu.className = 'show'
+
+})
+
+
+    
+
 
 home.addEventListener("click", function ()
  {
     
 
         menu.className = "zoomOut"
-        heading.className = 'show'
+        heading.className =  'heading'
         document.getElementById('heading1').className = 'show'
         main.className = 'show'
     
