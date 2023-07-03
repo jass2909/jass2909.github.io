@@ -1,19 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@600&display=swap');
 
+:root{
+   --bgColor: black;
+   --txtColor: white;     
+}
+
 body {
-    background-color: black;
+    background-color: var(--bgColor);
     margin-top: 0%;
+    margin: 0%;
 
     font-family: 'Martian Mono', monospace;
-    color: white;
-    overflow: hidden;
+    color: var(--txtColor);
+    overflow-x: hidden;
     user-select: none;
+    animation: fadeIn 1s ease-in forwards;
+    
+    
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#darkMode {
+    position: absolute;
+    display: none;
+        pointer-events: none;
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    right: 5%;
+    top: 5%;
+    border-radius: 20%;
+    opacity: 0.7;
+}
+#lightMode {
+    
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    right: 5%;
+    top: 5%;
+    border-radius: 20%;
+    opacity: 0.7;
+}
+.darkMode{
+    width: 50px;
+    
     
     
 }
 a{
     text-decoration: none;
-    color: white;
+    color: var(--txtColor);
 }
 #Contact {
     display: flex;
@@ -24,7 +71,7 @@ a{
 }
 
 #heading {
-    color: white;
+    color: var(--txtColor);
     width: auto;
     position: absolute;
     top: 50vh;
@@ -112,9 +159,9 @@ a{
 #menu {
 
 
-
-
-    background: #00000065;
+    margin-left: 0px;
+   
+    background: var(--bgColor);
 
 
     position: relative;
@@ -139,7 +186,7 @@ a{
 
 #menu h2 {
     margin: 0%;
-    text-shadow: 2px 2px 8px white;
+    text-shadow: 2px 2px 8px var(--txtColor);
     font-size: 2em;
     cursor: pointer;
 }
@@ -169,7 +216,7 @@ a{
 }
  a {
     text-decoration: none;
-    color: white;
+    color: var(--txtColor);
     transition-duration: 0.5s;
     
 }

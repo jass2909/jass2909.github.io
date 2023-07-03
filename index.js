@@ -8,6 +8,37 @@ let Projects = document.getElementById('Projects')
 let main = document.getElementById('main')
 let menuButton = document.getElementById('menuButton')
 
+let r = document.querySelector(":root")
+
+let lightMode = document.getElementById('lightMode')
+let darkMode = document.getElementById('darkMode')
+
+ 
+
+
+
+
+lightMode.addEventListener('click', function (params) {
+    r.style.setProperty('--bgColor', 'white')
+    r.style.setProperty('--txtColor', 'black')
+    lightMode.style.display = 'none'
+    darkMode.style.display = 'block'
+    darkMode.style.pointerEvents = 'all'
+    lightMode.style.pointerEvents = 'none'
+    
+    
+    
+  
+})
+darkMode.addEventListener('click', function (params) {
+    r.style.setProperty('--bgColor', 'black')
+    r.style.setProperty('--txtColor', 'white')
+    lightMode.style.display = 'block'
+    darkMode.style.display = 'none'
+    darkMode.style.pointerEvents = 'none'
+    lightMode.style.pointerEvents = 'all'
+})
+
 
 
 
